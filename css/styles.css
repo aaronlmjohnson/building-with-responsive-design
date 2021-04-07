@@ -51,7 +51,125 @@ table {
 }
 
 .wrapper {
-	height: 100vh;
-	background: pink;
+
 }
+
+.header {
+
+}
+
+.top-nav {
+	background: black;
+	height: 3vh;
+}
+
+.bottom-nav {
+	background: green;
+	height: 5vh; 
+}
+
+.cta {
+	background: yellow;
+	height: 3vh;
+}
+
+.hero {
+	display: grid;
+	padding: 1px 7px;
+	grid-gap: 7px;
+	height: 50vh;
+	grid-template-columns: 4fr 2fr;
+	grid-row: 1fr 1fr;
+}
+
+.hero-left {
+	background: orange;
+	height: 100%;
+	grid-row: span 2;
+}
+
+.hero-right {
+	background: purple;
+}
+
+.main-content {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	margin-top: 80px;
+}
+
+.news {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr 1fr;
+	grid-column: 2;
+}
+
+.news-article{
+	height: 30vh;
+	border: 1px solid black;
+	background: green;
+}
+
+.title {
+	margin: 50px 0;
+	height: 10vh;
+	background: orange;
+	grid-column: 2;
+}
+
+.funding-rounds {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column: 2;
+	grid-gap: 20px;
+}
+
+.round {
+	height: 20vh;
+	background: cyan;
+}
+
+.articles {
+	display: grid;
+	margin-top: 50px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	grid-column: 2;
+}
+
+.article {
+	height: 60vh;
+	background: blue;
+}
+
+.deals{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	grid-column: 2;
+	
+}
+
+.deal {
+	background: red;
+	height: 30vh;
+}
+
+.social-media {
+	margin-top: 40px;
+	height: 14vh;
+	background: rgb(43, 42, 42);
+}
+
+footer {
+	height: 9vh;
+	background: black;
+}
+
+
+
+
+
+
 
