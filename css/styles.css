@@ -50,122 +50,244 @@ table {
 	box-sizing: border-box;
 }
 
-.wrapper {
 
-}
-
-.header {
-
-}
-
-.top-nav {
-	background: black;
-	height: 3vh;
-}
-
-.bottom-nav {
+nav{
 	background: green;
 	height: 5vh; 
 }
+header {
+	display: grid;
+	height: 25vh;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
+}
+.header-left {
+	height: 100%;
+	background: pink;
+	grid-column: 2;
+}
 
-.cta {
-	background: yellow;
-	height: 3vh;
+.header-right {
+	height: 100%;
+	background: cyan;
+	grid-column: 3;
 }
 
 .hero {
 	display: grid;
-	padding: 1px 7px;
-	grid-gap: 7px;
-	height: 50vh;
-	grid-template-columns: 4fr 2fr;
+	height: 75vh;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
 	grid-row: 1fr 1fr;
 }
 
-.hero-left {
-	background: orange;
+.hero>.left {
+	display: grid;
+	grid-template-rows: 3fr 2fr;
+	grid-column: 2;
 	height: 100%;
-	grid-row: span 2;
-}
-
-.hero-right {
-	background: purple;
-}
-
-.main-content {
-	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
-	margin-top: 80px;
-}
-
-.news {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr 1fr;
-	grid-column: 2;
-}
-
-.news-article{
-	height: 30vh;
-	border: 1px solid black;
-	background: green;
-}
-
-.title {
-	margin: 50px 0;
-	height: 10vh;
-	background: orange;
-	grid-column: 2;
-}
-
-.funding-rounds {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-column: 2;
-	grid-gap: 20px;
-}
-
-.round {
-	height: 20vh;
-	background: cyan;
-}
-
-.articles {
-	display: grid;
-	margin-top: 50px;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 20px;
-	grid-column: 2;
-}
-
-.article {
-	height: 60vh;
-	background: blue;
-}
-
-.deals{
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 20px;
-	grid-column: 2;
 	
 }
 
-.deal {
+.left-top {
+	height: 100%;
+	background: blue;
+}
+.left-bottom {
+	height: 100%;
 	background: red;
-	height: 30vh;
 }
 
-.social-media {
-	margin-top: 40px;
-	height: 14vh;
-	background: rgb(43, 42, 42);
+.hero > .right {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 2fr;
+}
+
+.right-top {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column: span 2;
+}
+
+.right-top-left {
+	height: 100%;
+	background: yellow;
+}
+.right-top-right {
+	height: 100%;
+	background: purple;
+}
+
+.right-bottom {
+	height: 100%;
+	background: lime;
+	grid-column: span 2;
+}
+
+.popular-articles {
+	display: grid;
+	height: 30vh;
+	grid-template-rows: 1fr 1fr;
+	background: grey;
+	justify-items: center;
+	align-items: center;
+}
+
+.popular-articles h2 {
+	height: 10vh;
+	width: 10%;
+	background: white;
+}
+
+
+
+.articles {
+	display: grid;
+	grid-auto-flow: column;
+	width: 80%;
+	height: 100%;
+	background: yellow;
+}
+
+.article {
+	border: 1px solid black;
+}
+
+.latest-stories {
+	display: grid;
+	grid-template-columns: 2fr 7fr 2fr;
+	grid-template-rows: 3fr 5fr 2fr;
+	background: green;
+	height: 100vh;
+}
+
+.latest-stories h2 {
+	height: 10vh;
+	background: white;
+	grid-column: 2;
+	width: 20%;
+	align-self: center;
+}
+
+.all-news {
+	grid-column: 2;
+	grid-row: 3;
+	justify-self: center;
+	align-self: center;
+}
+
+.stories {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.story {
+	height: 20vh; 
+	border: 1px solid black;
+	background: purple;
+}
+
+.explore-channels {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: 2fr 2fr;
+	background: grey;
+	height: 60vh;
+}
+
+.explore-channels h2 {
+	height: 10vh;
+	background: white;
+	grid-column: 2;
+	width: 20%;
+	align-self: center;
+}
+
+.channels {
+	grid-column: 2;
+	grid-row: 2;
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 15px;
+}
+
+.channel {
+	background: purple;
+	height: 20vh;
+	border: 1px solid black;
+}
+
+.cta {
+	background: magenta;
+	height: 40vh;
+}
+
+.what-we-made {
+	height: 100vh;
+	background: rgb(184, 182, 182);
+}	
+.what-we-made h2 {
+	margin-left: 10%;
+	padding: 100px 0;
+	height: 10vh;
+	background: rgb(184, 182, 182);
+}
+.what-we-made > .content {
+	border: 1px solid black;
+	height: 70%;
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: 5fr 1fr;
+	width: 80%;
+}
+
+.what-we-made-left {
+	background: pink;
+}
+
+.what-we-made-right {
+	background: cyan;
+}
+
+.work-with-us {
+	background: rgb(219, 218, 218);
+	height: 50vh;
+}
+
+.content {
+	border: 1px solid black;
+	height: 70%;
+	width: 70%;
+	margin: 0 auto;
+	display: grid;
+	grid-auto-flow: column;
+}
+
+.work-with-us-left {
+	background: pink;
+}
+
+.work-with-us-right {
+	background: teal;
+}
+
+
+.companies {
+	height: 100%;
+	width: 60%;
+	background: yellow;
+	margin: 0 auto;
 }
 
 footer {
-	height: 9vh;
+	height: 50vh;
 	background: black;
 }
+
+
+
+
 
 
 
