@@ -52,31 +52,73 @@ table {
 
 
 nav{
-	background: green;
-	height: 5vh; 
+	background: white;
+	height: 50px; 
+	padding: 0 24px;
+	box-shadow: 0 1px 1px 1px black;
+}
+
+nav ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-flow: column;
+	align-items: center;
+	height: 100%;
+}
+
+nav ul li svg {
+	height: 1rem;
+}
+
+.center-nav {
+	display: grid;
+	grid-template-columns: repeat(6, 90px);
+	grid-auto-flow: column;
+	justify-items: center;
+	justify-self: center;
+}
+
+.mail {
+	justify-self: end;
 }
 header {
 	display: grid;
 	height: 25vh;
 	grid-template-columns: 1fr 3fr 3fr 1fr;
 }
+
+
 .header-left {
 	height: 100%;
-	background: pink;
+	display: grid;
+	background: white;
 	grid-column: 2;
+}
+
+.tnw-svg {
+	height: 33%;
+	width: 25%;
+	justify-self: center;
+	align-self: center;
 }
 
 .header-right {
 	height: 100%;
-	background: cyan;
+	background: white;
 	grid-column: 3;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	color: rgba(0, 0, 0, .7);
 }
 
 .hero {
 	display: grid;
-	height: 75vh;
 	grid-template-columns: 1fr 3fr 3fr 1fr;
-	grid-row: 1fr 1fr;
+	grid-row: 377px 244px;
+	grid-gap: 10px;
 }
 
 .hero>.left {
@@ -84,12 +126,18 @@ header {
 	grid-template-rows: 3fr 2fr;
 	grid-column: 2;
 	height: 100%;
+	grid-gap: 10px;
 	
 }
 
 .left-top {
 	height: 100%;
 	background: blue;
+}
+
+img {
+	width: 100%;
+	height: 100%;
 }
 .left-bottom {
 	height: 100%;
@@ -100,12 +148,14 @@ header {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 2fr;
+	grid-gap: 10px;
 }
 
 .right-top {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-column: span 2;
+	grid-gap: 10px;
 }
 
 .right-top-left {
